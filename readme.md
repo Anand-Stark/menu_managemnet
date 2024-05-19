@@ -54,3 +54,19 @@ const corsOptions = {
     optionsSuccessStatus: 200 // for legacy browsers
 };
 app.use(cors(corsOptions));
+
+Answers to questions : 
+1. Which database you have chosen and why?
+I chose MongoDB for this project because it offers high scalability, flexibility with its schema-less nature, and easy integration with Node.js applications through Mongoose. Its ability to handle large volumes of data efficiently makes it suitable for a dynamic menu management system.
+
+2. things that you learned from this assignment?
+How to set up and configure a Node.js and Express server with MongoDB.
+The importance of CORS in enabling secure cross-origin resource sharing for web applications.
+How to define and use Mongoose schemas and models to interact with a MongoDB database.
+
+3. What was the most difficult part of the assignment?
+I didnt find any part of the assignment that difficult because of my experience with team leading and role distributions in full-stack projects . 
+
+4. What you would have done differently given more time?
+
+Given more time, I would implement more robust error handling and validation throughout the API, add comprehensive unit and integration tests to ensure reliability, and enhance the documentation for better clarity and ease of use for future developers.

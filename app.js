@@ -16,13 +16,8 @@ connectDB();
 app.use(bodyParser.json());
 
 // enabling cors : 
-app.use(cors({ origin: true }));
+app.use(cors());
 
-// the api can be accessed from anywhere :
-app.use((req, res, next) => {
-  res.set("Access-Control-Allow-Origin", "*");
-  next();
-});
 
 // Define Routes
 app.use('/api', categoryRoutes);

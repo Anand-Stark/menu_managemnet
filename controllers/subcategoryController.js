@@ -2,8 +2,10 @@ const Subcategory = require('../models/Subcategory');
 
 exports.createSubcategory = async (req, res) => {
     const { name, image, description, taxApplicability, tax, category } = req.body;
+
     try {
         const subcategory = new Subcategory({ name, image, description, taxApplicability, tax, category });
+        console.log(subcategory);
         await subcategory.save();
         res.json(subcategory);
     } catch (err) {

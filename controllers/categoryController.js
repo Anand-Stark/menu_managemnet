@@ -1,13 +1,16 @@
 const Category = require('../models/Category');
 
 exports.createCategory = async (req, res) => {
+
+    console.log("name is" + req.body.name);
+
     const { name, image, description, taxApplicability, tax, taxType } = req.body;
     try {
         const category = new Category({ name, image, description, taxApplicability, tax, taxType });
         await category.save();
         res.json(category);
     } catch (err) {
-        res.status(500).send('Server Error');
+        res.status(500).send('Server Error ');
     }
 };
 
